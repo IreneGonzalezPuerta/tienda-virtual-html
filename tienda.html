@@ -2,21 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <title>Tienda Virtual</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></link>
 </head>
 <body>
-    <nav>
+    <header class="header">
+        <nav>
+                <a href="">inicio</a>
+                <a href="">PRODUCTOS</a>
+                <a href="">OFERTAS</a> 
+                <a href="">CONTACTO</a>
+            
+        </nav>
         
-            <a href="">INICIO</a>
-            <a href="">PRODUCTOS</a>
-            <a href="">OFERTAS</a> 
-            <a href="">CONTACTO</a>
+            <form>
+                <input type="search" id="buscar" placeholder="Buscar...">
+                <label for="buscar"></label>
+            </form>
         
-    </nav>
+    </header>
     <div class="container">
         <div class="main">
+    
             <div class="productos">
             
                 <div class="starprod">
@@ -51,13 +60,13 @@
                         <legend>FORMULARIO DE CONTACTO</legend>
 
                         <label for="nombre">Nombre:</label>
-                        <input id="nombre" type="text" value="Nombre"><br>
+                        <input id="nombre" type="text" placeholder="Nombre"><br>
                         
                         <label for="email">Correo electrónico:</label>
-                        <input id="correo" type="email" value="E-mail"><br>
+                        <input id="correo" type="email" placeholder="E-mail"><br>
                         
-                        <!-- <label for="mensaje">Mensaje:</label>
-                        <input id="mensaje" type="textarea value="Mensaje"> -->
+                        <label for="mensaje">Mensaje:</label>
+                        <input id="mensaje" type="textarea" placeholder="Mensaje">
                         
                         <label for="enviar"> </label>
                         <input id="enviar" type="submit" value="enviar">
@@ -94,7 +103,12 @@
 
             <div class="piepag">
 
-                <p>Iconos simples</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-accessible-icon"></i>
+                
             </div>
 
         </div>

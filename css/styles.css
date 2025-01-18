@@ -2,21 +2,42 @@
     margin: 0;
     padding: 0;
 }
-nav{
+.header{
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    align-content: space-evenly;
+    background-color: brown;
+    border-bottom: white 1px solid;
+
+} 
+
+.header input{
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5%;
+    font-weight: 700;
+    margin: 10px;
+    margin-top: 30px;
+    align-content: end;
+    
+}
+nav{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgb(53, 160, 3);
-    border: 5px solid white;
-    border-radius: 10px;
+    background-color: brown;
+    align-content: space-between;
 }
-a{
+nav a{
     text-decoration: none;
-    color: darkred;
+    color: rgb(248, 245, 247);
+    padding: 30px;
+    font-weight: 700;
     margin: 10px;
-    align-content:space-between;
+    text-transform:uppercase;
 }
+
 .container{
     display: flex;
     flex-direction: row;
@@ -24,10 +45,13 @@ a{
 .main{
     display: flex;
     flex-direction: column;
-    width: 70%;
-    background-color: rgb(252, 252, 121);
-    border: 5px solid white;
-    border-radius: 10px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: brown;
+    
+}
+img{
+   
 }
 .productos{
     display: flex;
@@ -36,22 +60,25 @@ a{
     margin:20px 5%; 
 }
 .productos div{
-    width:30%;
+    width: 90%;
     padding: 30px;
     align-content: space-evenly;
     align-content: center;
+    
 }
 .starprod{
-    background-color: rgb(250, 110, 16);
+    background-color: rgb(192, 99, 99);
     margin: 10px;
     border: 10px;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(3, 3, 3);
     align-content: center;
 }
 img{
     align-content: center;
     width:100%;
+    margin: 0 auto;
+    border: 1px solid black;
 }
 .starprod h3{
     align-content: center;
@@ -75,57 +102,76 @@ img{
     font-weight: 600;
 }
 aside{
-    border: 5px solid white;
-    border-radius: 10px;
+    background-color: brown;
+    border-left: 1px solid white;
 }
 aside h2{
-    border:solid 1px black;
-    background-color: rgb(247, 60, 91);
-    color: #f8f846;
-    font-size: 45px;
-    font-weight: 600;
-    padding: 20px;
+    background-color: brown;
+    color: white;
+    border-left: 1px solid white;
+    text-shadow: 5px whitesmoke;
+    font-size: 35px;
+    font-weight: 900;
+    padding: 15px;
+    text-align: center;
 }
 form{
     display:flex;
     flex-direction: column;
+    font-weight: 800;
 }
 form input{
-    margin-top: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+
 }
 aside ol{
     list-style-type: none;
 }
 
 footer{
-    border: 5px solid white;
-    border-radius: 10px;
     width: 100%;
-    background-color:rgb(53, 160, 3);
+    background-color:rgb(107, 18, 18);
     font-weight: 600;
-    font-size: 12px;
+    border-top: 1px solid white;
+    padding: 0 40px;
 }
-.piepagina{
+
+.piepagina {
     display: flex;
     flex-direction: row;
-    align-items: first baseline;
-    align-content: space-between;
 }
-.piepag{
-    padding: 5px;
-    margin: 30px;
+.piepag div{
+    flex-direction: column;
 }
 .piepag li{
     margin-top: 5px;
     list-style-type: none;
+    font-size: 15px;
 }
-.piepag p{
-    margin: 5px 30px;
+.piepag i{
+
+   font-size: 20px;
+   margin: 0 50px;
+   padding: 10px 10%
 }
 
-
-
-@media (max-width: 850px) {
+@media (max-width: 1100px) {
+    .header{
+        flex-direction: column;
+    }
+    .header input {
+        width: 30%;
+        margin: 0 auto;
+        padding: 5px 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    nav a{
+        padding: 5px;
+        margin: 10px;
+        
+    }
     .container{
         display: flex;
         flex-direction: column;
@@ -136,9 +182,15 @@ footer{
     .productos{
         display: flex;
         flex-direction: column;
+        width: 85%;
+        margin:5%; 
     }
     .productos div{
         width:85%;
+        margin: 0 autp;
+    }
+    aside{
+        border:0;
     }
     .piepagina{
         display: flex;
