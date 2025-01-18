@@ -74,6 +74,10 @@ img{
     border: 1px solid rgb(3, 3, 3);
     align-content: center;
 }
+.starprod p{
+    margin: 20px 5px;
+    text-align: center;
+}
 img{
     align-content: center;
     width:100%;
@@ -87,9 +91,18 @@ img{
     color: rgb(31, 30, 30);
     border:1px solid black;
     border-radius: 10px;
+    padding:5px;
+    margin:10px 5px;
 }
 .starprod p{
     text-align: center;
+}
+.starprod input{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding:5px;
+
 }
 .precio{
     font-size: 20px;
@@ -120,10 +133,20 @@ form{
     flex-direction: column;
     font-weight: 800;
 }
+form legend{
+    padding: 20px 0;
+}
 form input{
     margin: 10px 0;
     border-radius: 5px;
-
+    
+}
+form label{
+    margin-left: 5%;
+}
+#enviar{
+    padding: 2px 15px;
+    border-radius: 10px;
 }
 aside ol{
     list-style-type: none;
